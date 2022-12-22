@@ -176,6 +176,9 @@ text-align: center;
     .meal-card{
         margin: 0;
     }
+    .m1{
+        margin: 0;
+    }
     .meal-detail{
         width: 700px;
     }
