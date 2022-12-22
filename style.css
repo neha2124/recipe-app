@@ -159,7 +159,7 @@ text-align: center;
     display: block;
 }
 /* media querry */
-@media screen and (min-width: 600px){
+@media screen and (max-width: 600px), (min-width : 360px){
     .search-container{
         width: 540px;
         margin-left: auto;
