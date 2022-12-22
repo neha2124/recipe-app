@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+
+}
+a{
+    /* text-decoration: none; */
+    font-size: large;
+    font-weight: 700;
+
+}
+.m1{
+    margin: 2rem 4rem;
+}
+.head ,.quote {
+    text-align: center;
+}
+.writter-name{
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.search-container input{
+    padding: 10px 40px 10px 30px;
+    border: 1px solid blue;
+    border-radius: 30px;
+    width: 500px;
+    text-transform: capitalize;
+    font-size: 20px;
+    
+
+}
+.search-container input::placeholder{
+    font-size: 1.3em;
+    position: absolute;
+}
+
+.search-btn{
+    position: relative;
+    right: 40px;
+    font-size: 1.2em;
+    background: transparent;
+   width: 55px;
+   height: 55px;
+   /* padding: -50px; */
+   margin: -10px;
+   border: none;
+   
+}
+
+#meal h1{
+    text-align: center;
+}
+.meal-card{
+    /* display: grid; */
+
+    margin: 2rem;
+   overflow: hidden;
+   border-radius:10px ;
+   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+}
+.meal-card img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.dish-name{
+    text-align: center;
+    margin: 2em 0;
+    
+}
+/* .recepie-btn{
+    display:block ;
+    margin: 2rem auto;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    background-color: rgb(127, 161, 255);
+    color: rgb(24, 24, 24);
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.79);
+
+} */
+.recepie-btn:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+.meal-detail{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(238, 85, 116);
+    color: antiquewhite;
+    height: 90%;
+    width: 90%;
+    border-radius: 1rem;
+    transform: translate(-50% , -50%);
+    padding: 2rem 0;
+    overflow-y:scroll ;
+    overflow-x: hidden;
+    display: none;
+}
+.recipe-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    background: transparent;
+    border:none;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+
+}
+.meal-contents{
+padding: 1em 3em;
+}
+.meal-name{
+    text-align: center;
+}
+.category-name{
+    text-align: center;
+    display: block;
+    text-transform: capitalize;
+    text-decoration:underline;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: black;
+}
+.meal-instruction h3{
+text-align: center;
+}
+.meal-img img{
+    height: 55px;
+    width: 55px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+.showRecipe{
+    display: block;
+}
+/* media querry */
+@media screen and (min-width: 600px){
+    .search-container{
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+       .meal-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .meal-card{
+        margin: 0;
+    }
+    .meal-detail{
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 992px){
+       .meal-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
